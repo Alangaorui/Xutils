@@ -16,6 +16,7 @@ import java.util.List;
 /**
  * Created by grant on 2018/4/24 0024.
  * 封装Xutils的请求的接口
+ * 看接口的定义是架构来设计
  */
 
 public class XutilsHttp {
@@ -102,17 +103,8 @@ public class XutilsHttp {
                     //网络请求错误码
                     String errorCode = ((HttpException) ex).getErrorCode();
                     if (errorCode.equals("502")) {
-//                        DialogUtil.promptDialog(mContext, "系统繁忙请!");
                     }
                     mHttpRequesListener.onFailure(params.getUri(), "网络请求失败!",null);
-                } else { // 其他错误
-
-                    if (ex.toString().contains("SocketTimeoutException")) {
-                        mHttpRequesListener.onFailure(params.getUri(), "网络请求失败!",null);
-                    } else {
-                        Log.e("url","url"+params.getUri());
-                        mHttpRequesListener.onFailure(params.getUri(), "网络请求失败",null);
-                    }
                 }
             }
 

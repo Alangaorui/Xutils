@@ -6,8 +6,8 @@ package com.grant.xutils;
 
 public class NetworkRequest {
 
-    public static String BASE_URL = "***";
+    public static String BASE_URL = "http://172.161.1.246:90/SMPWeb";
 
-    public static String LIST = BASE_URL + "***";
+    public static String LIST = BASE_URL + "/signAndBinding/bankList";
 
 }

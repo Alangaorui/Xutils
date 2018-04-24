@@ -1,8 +1,6 @@
 package com.grant.xutils;
 
-import android.app.ListActivity;
 import android.content.Intent;
-import android.renderscript.Sampler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
