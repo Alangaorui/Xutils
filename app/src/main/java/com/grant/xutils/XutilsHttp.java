@@ -59,7 +59,7 @@ public class XutilsHttp {
             mHttpRequesListener.onFailure(params.getUri(), "当前网络不可用\n请检查你的网络设置",null );
             return mLoadingDialog;
         }
-        params.addBodyParameter("sign","d2dfd0c44acca01bc4df74bbeec49e53");
+       //设置请求时长
         params.setConnectTimeout(10000);
         // 发送post请求
         postRequest(params);
